@@ -18,10 +18,7 @@ const Cronometro = () => {
 
   const iniciarCronometro = () => setAtivo(true);
   const pausarCronometro = () => setAtivo(false);
-  const reiniciarCronometro = () => {
-    setAtivo(false);
-    setTempo(0);
-  };
+  const reiniciarCronometro = () => {setAtivo(false);setTempo(0);};
 
   const tempoFormatado = () => {
     const minutos = String(Math.floor((tempo / 60000) % 60)).padStart(2, '0');
